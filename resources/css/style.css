@@ -1,0 +1,27 @@
+body{
+    background-color: lightpink;
+}
+
+#formPedido, input{
+    padding: 2px;
+}    
+
+#tablePedido{
+    table-layout: auto;
+    background-color: white;   
+}
+
+th, td{
+    text-align: center;
+    border: 1px solid;
+    font-size: 12px;
+    padding: 3px;
+}
+
+h5, h6{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
