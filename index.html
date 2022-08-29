@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vakery</title>
+    <link rel="icon" href="img/download.jpg">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="text-align:center;"><strong>VAKERY</strong><em> by <strong>Let it V</strong></em></h1>
+        </div>
+    </header>
+    <div class="row">
+            <form class="pink lighten-2 col m10 offset-m1 s10 offset-s1" id="formPedido" style="height: 30rem; font-size: 12px;">
+                <h5>Pedidos</h5>
+                <div class="col m6 s6">
+                    <label class="white-text" for="local">Locales</label>
+                    <select class="browser-default" id="local" name="local" required>
+                        <option value="">Elegi tu local...</option>
+                        <option value="Mercat">Mercat</option>
+                        <option value="Manduca">Manduca</option>
+                        <option value="Devoto">Devoto</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Costa">Costa</option>
+                        <option value="Grano Mercat">Grano Mercat</option>
+                        <option value="Grano Alto">Grano Alto</option>
+                        <option value="Juan Valdez">Juan Valdez</option>
+                    </select>
+                </div>
+                <div class="input-field col m3 s3">
+                    <label class="white-text" for="fecha_pedido">Fecha de Pedido</label>
+                    <input placeholder="" id="fecha_pedido" type="date" name="fecha_pedido" id="fecha_pedido" required>
+                </div>
+                <div class="input-field col m3 s3">
+                    <label class="white-text" for="fecha_entrega">Fecha de Entrega</label>
+                    <input placeholder="" id="fecha_entrega" type="date" name="fecha_entrega" id="fecha_entrega"
+                        required>
+                </div>
+                <div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="matilda">Matilda</label>
+                        <input id="matilda" type="number" name="matilda" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="carrot">Carrot</label>
+                        <input id="carrot" type="number" name="carrot" value="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="red_velvet">Red Velvet</label>
+                        <input id="red_velvet" type="number" name="red_velvet" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="ch_maracuya">CheeseCake Maracuya</label>
+                        <input id="ch_maracuya" type="number" name="ch_maracuya" value="0" step="0.5" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="ch_f_rojos">CheeseCake Frutos Rojos</label>
+                        <input id="ch_f_rojos" type="number" name="ch_f_rojos" value="0" step="0.5" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="ch_frutilla">CheeseCake Frutilla</label>
+                        <input id="ch_frutilla" type="number" name="ch_frutilla" value="0" step="0.5" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="ch_arandanos">CheeseCake Arandanos</label>
+                        <input id="ch_arandanos" type="number" name="ch_arandanos" value="0" step="0.5" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="marmolado">Budin Marmolado</label>
+                        <input id="marmolado" type="number" name="marmolado" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="cookie_black">Cookie Black</label>
+                        <input id="cookie_black" type="number" name="cookie_black" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="cookie_chip">Cookie Chip</label>
+                        <input id="cookie_chip" type="number" name="cookie_chip" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="brownie">Brownie</label>
+                        <input id="brownie" type="number" name="brownie" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="black_blondie">Black Blondie</label>
+                        <input id="black_blondie" type="number" name="black_blondie" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="pan_molde">Pan de Molde</label>
+                        <input id="pan_molde" type="number" name="pan_molde" value="0" min="0">
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="focaccia">Focaccia</label>
+                        <input id="focaccia" type="number" name="focaccia" value="0" min="0" disabled>
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="limon">Budin Limon</label>
+                        <input id="limon" type="number" name="limon" value="0" min="0" disabled>
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="torta_ket">Torta Keto</label>
+                        <input id="torta-keto" type="number" name="torta-keto" value="0" min="0" disabled>
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="marroc">Marroc</label>
+                        <input id="marroc" type="number" name="marroc" value="0" min="0" disabled>
+                    </div>
+                    <div class="input-field col m2 s2">
+                        <label class="white-text" for="petitfour">Petitfour</label>
+                        <input id="petitfour" type="number" name="petitfour" value="0" min="0" disabled>
+                    </div>
+                </div>
+                <div class="col m4 offset-m4 s4 offset-s4">
+                    <button class="btn-small" type="submit" name="btn_enviar">Enviar Pedido
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <button class="btn-small" type="reset" name="btn_ limpiar">Limpiar
+                        <i class="material-icons right">delete</i>
+                    </button>
+                </div>
+            </form>
+        <!-- <div class="divider"></div> -->
+        <div class="col m10 offset-m1 s10 offset-s1"><br>
+            <table class="responsive-table centered white-text pink lighten-2" id="tablePedido" style="font-size: 12px;">
+                <h5>Tabla de Pedidos</h5>
+                
+                <tr>
+                    <th>Local</th>
+                    <th>Fecha Pedido</th>
+                    <th>Fecha Entrega</th>
+                    <th>Matilda</th>
+                    <th>Carrot Cake</th>
+                    <th>Red Velvet</th>
+                    <th>Ch. Maracuya</th>
+                    <th>Ch. F. Rojos</th>
+                    <th>Ch. Frutilla</th>
+                    <th>Ch. Arandanos</th>
+                    <th>Marmolado</th>
+                    <th>Cookie Black</th>
+                    <th>Cookie Chip</th>
+                    <th>Brownie</th>
+                    <th>Black Blondie</th>
+                    <th>Pan Molde</th>
+                    <th>Eliminiar</th>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script src="resources/js/scripts.js">
+    </script>
+</body>
+
+</html>
