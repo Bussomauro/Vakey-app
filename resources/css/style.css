@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: lightpink;
 }
 
@@ -24,4 +24,8 @@ h5, h6{
     font-weight: bold;
     text-decoration-line: underline;
 }
+ */
+ th{
+    color: black;
+ }
 
